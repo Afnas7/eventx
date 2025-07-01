@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light mode */
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Dark mode */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s;
+  color: hsl(0, 13%, 92%); /* ⬅️ default black text */
+}
+
+/* Light mode */
+body.light {
+  --bg-color: #ffffff;
+  background-color: var(--bg-color);
+}
+
+/* Dark mode */
+body.dark {
+  --bg-color: #121212;
+  background-color: var(--bg-color);
+  color: #000000; /* ⬅️ still black text in dark mode */
+}
